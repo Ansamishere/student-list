@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student List </title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Student List </h1>
+  
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+  </div>
+  
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+  </div>
+  
+  <div>
+    <label for="major">Major:</label>
+    <input type="text" id="major" required>
+  </div>
+  
+  <button id="addBtn">Add Student</button>
+  
+  <div>
+    <label for="filterAge">Filter by Age:</label>
+    <input type="number" id="filterAge">
+  </div>
+  
+  <div>
+    <label for="filterMajor">Filter by Major:</label>
+    <input type="text" id="filterMajor">
+  </div>
+  
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Major</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody">
+      <!-- Student rows will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
